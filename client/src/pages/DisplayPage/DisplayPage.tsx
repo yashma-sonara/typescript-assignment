@@ -18,10 +18,10 @@ const DisplayPage: React.FC<DisplayPageProps> = ({ notificationSettings, setNoti
             
       // Set timeout to remove the notification after the specified duration
       const timeoutId = setTimeout(() => {
-        // Check if the notification is currently being hovered over
+        // Check if notification is currently being hovered over
         const isHovered = document.getElementById(notification.msg_id)?.matches(':hover');
         if (!isHovered) {
-          // Remove the notification only if it's not being hovered over
+          // Remove notification only if it's not being hovered over
           handleClose(notification.msg_id);
         } else {
           // If it's hovered over, wait and check again later
@@ -48,7 +48,7 @@ const DisplayPage: React.FC<DisplayPageProps> = ({ notificationSettings, setNoti
         if (isAnyHovered) {
           return [...prevNotifications, notification]; // Add the new notification to the end
         } else {
-          // Add the new notification to the beginning while maintaining the maximum number of notifications
+          // Add the new notification to the beginning while maintaining the max number of notifications
           const newNotifications = [...prevNotifications, notification];
           return newNotifications.slice(Math.max(0, newNotifications.length - notificationSettings.notificationCount));
         }
@@ -126,8 +126,9 @@ const DisplayPage: React.FC<DisplayPageProps> = ({ notificationSettings, setNoti
     }
   };
 
+
+  // Remove the notification with the given msg_id
   const handleClose = (msg_id: string) => {
-    // Remove the notification with the given msg_id
     setNotifications((prevNotifications) => prevNotifications.filter((n) => n.msg_id !== msg_id));
   };
 
@@ -154,7 +155,7 @@ const DisplayPage: React.FC<DisplayPageProps> = ({ notificationSettings, setNoti
     }
   };
 
-  console.log("Number of notifications displayed:", notifications.length);
+  
   return (
     <div className="app-container">
       <Header />

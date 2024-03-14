@@ -53,3 +53,10 @@
     background-color: #0056b3;
   }
   
+  .input-container select, .input-container select option{
+    background-color: rgba(255, 255, 255, 0.16);
+    color: white;
+    margin-left: 10px;
+  }
+
+  

@@ -58,13 +58,13 @@ const SettingsPage: React.FC<SettingsPageProps> = ({ setNotificationSettings }) 
       <div className="form-container">
         <form onSubmit={handleSubmit}>
           <div className="input-container">
-            <label>
+            <label className='text'>
               Notification Count:
               <input type="number" value={notificationCount} onChange={handleNotificationCountChange} />
             </label>
           </div>
           <div className="input-container">
-            <label>
+            <label className='text'>
               Notification Position:
               <select value={notificationPosition} onChange={handleNotificationPositionChange}>
                 <option value={1}>Top Left</option>
@@ -75,7 +75,7 @@ const SettingsPage: React.FC<SettingsPageProps> = ({ setNotificationSettings }) 
             </label>
           </div>
           <div className="input-container">
-            <label>
+            <label className='text'>
               Notification Disappear Time (milliseconds):
               <input type="number" value={notificationDisappearTime} onChange={handleNotificationDisappearTimeChange} />
             </label>

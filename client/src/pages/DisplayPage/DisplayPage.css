@@ -15,10 +15,14 @@ body {
     padding-top: 50px;
 }
 
+.notification-content {
+    color: white;
+}
+
 .notification {
-    background-color: #f0f0f0;
-    border: 1px solid #ccc;
-    border-radius: 5px;
+    background-color: #3b3b3b;
+    border: 1px solid #232424;
+    border-radius: 10px;
     padding: 10px;
     margin: 10px;
     max-width: 80%; /* Set max-width instead of width */
@@ -83,6 +87,8 @@ body {
     top: 5px;
     right: 5px;
     cursor: pointer;
+    background-color: #3b3b3b;
+    color: white;
   }
   
 

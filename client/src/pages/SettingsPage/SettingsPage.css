@@ -1,20 +1,38 @@
 .input-container {
     display: flex;
     flex-direction: column;
+    
+    padding-bottom: 20px;
     margin-bottom: 10px;
+    background-color: #2f3030;
+    border-radius: 10px;
+
+    
   }
   
   .input-container label {
-    margin-bottom: 5px;
+    margin-top: 15px;
+    margin-left: 10px;
+  }
+
+  .text {
+    color: rgba(255, 255, 255, 0.9);
   }
   
   /* Additional styling for the form */
   .form-container {
     padding: 20px;
-    border: 1px solid #ccc;
+    
     border-radius: 10px;
-    background-color: #f9f9f9;
+    background-color: #2f3030;;
   }
+
+  .input-container label.text input {
+    color: rgba(255, 255, 255, 0.9);
+    background-color: #2f3030;
+    margin-left: 10px;
+  }
+  
   
   .form-container form {
     display: flex;

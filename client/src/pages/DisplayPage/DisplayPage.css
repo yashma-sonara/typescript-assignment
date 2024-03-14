@@ -1,0 +1,93 @@
+body {
+    background-color: #161B2A;
+}
+
+.notification-container {
+    position: absolute;
+    width: 100%;
+    height: calc(100vh - 150px);
+    display: flex;
+    flex-direction: column; 
+    
+}
+
+.notification-container.bottom-left, .notification-container.bottom-right {
+    padding-top: 50px;
+}
+
+.notification {
+    background-color: #f0f0f0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 10px;
+    margin: 10px;
+    max-width: 80%; /* Set max-width instead of width */
+    overflow-wrap: break-word; 
+    position: relative;
+}
+
+
+
+/* Add glow effect on hover */
+.notification:hover {
+    box-shadow: 0 0 10px #ffcc00;
+    position: sticky;
+    top: 0;
+}
+
+/* Fixed position only when hovered */
+.notification.hovered {
+    position: sticky;
+    top: 0; 
+}
+
+
+.notification-inner-container {
+    flex: 1;
+    overflow-y: auto; /* Enable scrolling for messages */
+    width: 50%;
+}
+
+
+
+
+.notification-inner-container.top-right {
+    align-items: flex-end;
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+
+.notification-inner-container.bottom-left {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    display: flex;
+    flex-direction: column-reverse; /* Change the direction to column */
+    padding-top: 50px;
+
+}
+
+.notification-inner-container.bottom-right {
+    
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    flex-direction: column-reverse;
+    padding-top: 50px;
+}
+
+.close-btn {
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    cursor: pointer;
+  }
+  
+
+  .notification-content {
+    padding-right: 25px; 
+  }
+
+

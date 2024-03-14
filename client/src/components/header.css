@@ -1,0 +1,47 @@
+.header{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.header_wrapper{
+    width: 95%;
+    display: flex;
+    height: 72px;
+    border-bottom: 1px solid grey;
+    flex-direction: row;
+
+}
+
+.header_title{
+    margin-right: 28px;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 22px;
+    line-height: 32px;
+
+    display: flex;
+    align-items: center;
+    font-feature-settings: 'liga' off;
+
+    color: rgba(255, 255, 255, 0.9);
+}
+
+.header_menu{
+    margin-left: 12px;
+    margin-right: 12px;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+
+    display: flex;
+    align-items: center;
+    font-feature-settings: 'liga' off;
+
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+    text-underline-offset: 26px;
+}
